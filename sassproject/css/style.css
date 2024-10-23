@@ -1,3 +1,43 @@
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
+.btn-primary {
+  color: #fff;
+  background-color: blue;
+}
+
+.btn-danger {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: green;
+}
+
+body {
+  color: rgba(17, 7, 7, 0.744);
+  background-color: rgba(18, 36, 229, 0.155);
+}
+
+ul {
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */

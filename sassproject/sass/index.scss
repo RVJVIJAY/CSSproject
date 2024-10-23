@@ -1,3 +1,27 @@
+@import 'button';
 //variables
+$background-color:rgba(18, 36, 229, 0.155);
+$color:rgba(17, 7, 7, 0.744);
 
-$background-color:rgba(241, 153, 207, 0.9)
+body{
+    color:$color;
+    background-color:$background-color;
+}
+
+//nested Rules
+ul{
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+
+    li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        
+    }
+}

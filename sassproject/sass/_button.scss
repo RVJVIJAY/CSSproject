@@ -1,0 +1,22 @@
+$primary:blue;
+$danger:red;
+$success:green;
+
+.btn{
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn-primary{
+    color: #fff;
+    background-color: $primary;
+}
+.btn-danger{
+    background-color: $danger;
+    color: #fff;
+}
+.btn-success{
+    color: #fff;
+    background-color: $success;
+}
