@@ -1,3 +1,7 @@
+//Math fuctions 
+@use "sass:math";
+@debug math.max(1rem,12rem,5rem);
+//variable
 $primary:blue;
 $danger:red;
 $success:green;
@@ -20,3 +24,4 @@ $success:green;
     color: #fff;
     background-color: $success;
 }
+
