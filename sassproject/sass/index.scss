@@ -27,3 +27,13 @@ ul{
         
     }
 }
+
+h1{
+ color: map-get($colors , "primary" );
+}
+h3{
+    color:map-get($addcolor,"secondry" );
+}
+h2{
+    color: map-get($colors , "danger");
+}

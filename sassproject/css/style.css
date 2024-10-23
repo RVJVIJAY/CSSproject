@@ -3,6 +3,7 @@
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 0.75rem;
 }
 
 .btn-primary {
@@ -38,6 +39,18 @@ ul li {
 ul li a {
   color: white;
   text-decoration: none;
+}
+
+h1 {
+  color: blue;
+}
+
+h3 {
+  color: rgb(68, 128, 224);
+}
+
+h2 {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,27 @@
 //Math fuctions 
 @use "sass:math";
 @debug math.max(1rem,12rem,5rem);
+@debug math.ceil(4.3);
 //variable
 $primary:blue;
 $danger:red;
 $success:green;
+$base-font-size:1rem;
+//Map  [inside key value pair ]
+$colors:(
+    "primary":blue,
+    "info":lightblue,
+    "danger":red,
+);
+//to add color into map 
+$addcolor:map-merge($colors,("secondry":rgb(68, 128, 224)) );
 
 .btn{
     padding: 10px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    font-size: $base-font-size *0.75;
 }
 .btn-primary{
     color: #fff;
