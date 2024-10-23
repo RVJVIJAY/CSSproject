@@ -1,0 +1,27 @@
+.box-if{
+    $width:300px;
+    $height:300px;
+    $bg-color:black;
+    $color:black;
+    $is-div:true;
+// change backgroud and text color
+    @if($bg-color==$color){
+        background-color: black;
+        color: white;
+    }@else{
+        background-color: white;
+        color: black;
+    }
+
+    //Logical and,or,not base checking
+    //and
+    @if($height>=300 and $width>=300){
+        border-radius: 20px;
+        padding: 20px;
+    }
+    //not 
+    @if not $is-div{  
+        display: none;
+    }
+
+}
