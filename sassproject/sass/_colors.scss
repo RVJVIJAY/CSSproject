@@ -1,0 +1,33 @@
+$colors:(
+    "primary":blue,
+    "info":lightblue,
+    "danger":red,
+    "success":green
+);
+//to add color into map 
+$addcolor:map-merge($colors,("secondry":rgb(68, 128, 224)) );
+
+@each $key,$val in $colors{
+    .text-#{$key} {   // it create class like text-primary:blue;
+        color: $val;
+      }
+ .bg-#{$key}{
+    color: $val;
+ }
+ @for $i from 1 through 3 { // this loop is just like add color to light to high
+    .text-#{$key}-light-#{$i}{ 
+        color: lighten($val,$i*10);
+    }
+    .bg-#{$key}-light-#{$i}{
+        background-color:lighten($val,$i*10);
+    }
+ }
+ @for $i from 1 to 4 {
+    .bg-#{$key}-dark-#{$i}{
+        background-color: darken($val, $i*10);
+    }
+ }
+}
+.text-color{
+    color: white;
+}

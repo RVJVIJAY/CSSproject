@@ -1,39 +1,36 @@
-
-@import 'button';
-
+@import "button";
+@import "colors";
 //variables
-$background-color:rgba(18, 36, 229, 0.155);
-$color:rgba(17, 7, 7, 0.744);
-
-body{
-    color:$color;
-    background-color:$background-color;
+$background-color: rgba(18, 36, 229, 0.155);
+$color: rgba(17, 7, 7, 0.744);
+body {
+  color: $color;
+  background-color: $background-color;
 }
 
 //nested Rules
-ul{
-    background-color: rgb(41, 41, 41);
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+ul {
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
 
-    li{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        
+  li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    a {
+      color: white;
+      text-decoration: none;
     }
+  }
 }
 
-h1{
- color: map-get($colors , "primary" );
+h1 {
+  color: map-get($colors, "primary");
 }
-h3{
-    color:map-get($addcolor,"secondry" );
+h3 {
+  color: map-get($addcolor, "secondry");
 }
-h2{
-    color: map-get($colors , "danger");
+h2 {
+  color: map-get($colors, "danger");
 }
