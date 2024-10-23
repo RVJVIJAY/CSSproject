@@ -208,6 +208,68 @@
   padding: 20px;
 }
 
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  background-color: lightblue;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  width: 100px;
+}
+
+.para {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  background-color: lightblue;
+  color: blueviolet;
+}
+
+.button-primary {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+}
+.button-primary:hover {
+  background-color: #6666ff;
+  cursor: pointer;
+}
+
+.button-info {
+  background-color: rgb(67, 185, 224);
+  color: black;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+}
+.button-info:hover {
+  background-color: rgb(154.5616438356, 217.602739726, 238.4383561644);
+  cursor: pointer;
+}
+
+.button-danger {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+}
+.button-danger:hover {
+  background-color: #ff6666;
+  cursor: pointer;
+}
+
 body {
   color: rgba(17, 7, 7, 0.744);
   background-color: rgba(18, 36, 229, 0.155);
