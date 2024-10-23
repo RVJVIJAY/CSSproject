@@ -1,0 +1,14 @@
+// @import "sass:math";
+@function px-to-rem($px){ // 16px equal to 1 rem
+    @return ($px/16)+rem;  //use math.div also 
+}
+@function rem-to-px($rem) {
+    @return $rem * 16 + px;
+}
+
+.heading{
+    font-size: px-to-rem(32);
+}
+.content{
+    font-size: px-to-rem(10);
+}
