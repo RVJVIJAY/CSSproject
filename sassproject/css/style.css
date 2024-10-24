@@ -310,6 +310,13 @@
   padding-left: 30px;
 }
 
+.border {
+  border: 2px solid black;
+  border-radius: 40px;
+  background-color: gray;
+  color: white;
+}
+
 body {
   color: rgba(17, 7, 7, 0.744);
   background-color: rgba(18, 36, 229, 0.155);

@@ -20,6 +20,7 @@ $utilities:(
             "3":$padding*6
         )
     )
+    //same way to we create margin ,opacity also 
 );
  // 1st get the utilitie map then only access inside the properties
 $padding-map: map-get($utilities,"padding-left");

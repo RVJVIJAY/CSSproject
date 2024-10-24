@@ -1,0 +1,10 @@
+%extend-boder{
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: gray;
+    color: white;
+}
+
+.border{
+    @extend %extend-boder;
+}
