@@ -1,0 +1,41 @@
+//base padding size , THIS WAY TO BOOTSTRAP CLASSES CREATED 
+$padding:5px;
+//create utilites map with key value pair 
+$utilities:(
+    "padding":(
+        "prefix":"p",
+        "values":(
+            "0":0,
+            "1":$padding*2,
+            "2":$padding*4,
+            "3":$padding*6
+        )
+    ),
+    "padding-left":(
+        "prefix":"pl",
+        "values":(
+            "0":0,
+            "1":$padding*2,
+            "2":$padding*4,
+            "3":$padding*6
+        )
+    )
+);
+ // 1st get the utilitie map then only access inside the properties
+$padding-map: map-get($utilities,"padding-left");
+@debug $padding-map;
+
+$get-padding-prefix: map-get($padding-map, "prefix" );
+@debug $get-padding-prefix;
+
+@each $property,$map in $utilities{
+    $prefix: map-get($map,"prefix" );
+    $values: map-get($map,"values" );
+    // @debug $prefix;
+    // @debug $values;
+    @each $key,$val in $values{
+        .#{$prefix}-#{$key}{
+            #{$property}:$val;
+        }
+    }
+}
